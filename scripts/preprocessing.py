@@ -46,7 +46,7 @@ class PreProcess:
 
         return df, df_before_filling, missing_cols
 
-    def clean_features(self, df):
+    def clean_feature_name(self, df):
         """Clean labels of the dataframe.
 
         Args:
