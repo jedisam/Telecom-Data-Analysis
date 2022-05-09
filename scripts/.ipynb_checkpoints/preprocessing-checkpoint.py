@@ -1,4 +1,3 @@
-from turtle import st
 import numpy as np
 import pandas as pd
 
@@ -19,9 +18,9 @@ class PreProcess:
             df (pd.DataFrame): dataframe to be preprocessed
             column (str): dataframe column to be converted
         """
-        df[column] = pd.to_datetime(
-            df[column], errors='coerce')
-        return df
+        self.df[column] = pd.to_datetime(
+           column)
+        return self.df
 
     def convert_to_float(self, df, column: str):
         """Convert column to float.
@@ -33,17 +32,17 @@ class PreProcess:
         self.df[column] = df[column].astype(float)
         return self.df
 
-    def drop_variables(self, df):
+    def drop_variables(self, df, column: str, percentage: int):
         """Drop variables based on a percentage.
 
         Args:
             df (pd.DataFrame): dataframe to be preprocessed
+            column (str): Column to be dropped
             percentage(int): Percentage of variables to be dropped
         """
-        df_before_filling = df.copy()
-        df = df[df.columns[df.isnull().mean() < 0.3]]
+        df_before_filling = df
+        df = df[df.columns[df.isnull().mean() < percentage / 100]]
         missing_cols = df.columns[df.isnull().mean() > 0]
-        print(missing_cols)
 
         return df, df_before_filling, missing_cols
 

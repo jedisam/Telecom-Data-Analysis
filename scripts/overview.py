@@ -13,7 +13,7 @@ class Overview:
 
     # how many missing values exist or better still what is the % of missing values in the dataset?
 
-    def percent_missing(df: pd.DataFrame):
+    def percent_missing(self, df: pd.DataFrame):
         """Get the percentage of missing values in the dataset.
 
         Args:
@@ -37,7 +37,7 @@ class Overview:
 
         return df
 
-    def get_skewness(df: pd.DataFrame):
+    def get_skewness(self, df):
         """Return the skewness of the dataset.
 
         Args:
