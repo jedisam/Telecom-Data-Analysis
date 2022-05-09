@@ -56,6 +56,17 @@ class PreProcess:
                       for column in df.columns]
         return df
 
+    def rename_columns(self, df: pd.DataFrame, column: str, new_column: str):
+        """Rename a column.
+
+        Args:
+            df (pd.DataFrame): dataframe to be preprocessed
+            column (str): column to be renamed
+            new_column (str): New column name
+        """
+        df = df[column].rename(new_column)
+        return df
+
     def fill_numerical_variables(self, df):
         """Fill numerical variables.
 
