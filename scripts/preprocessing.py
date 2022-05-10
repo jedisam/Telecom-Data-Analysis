@@ -101,3 +101,13 @@ class PreProcess:
         print(df_single.loc[:, cat_cols].mode().iloc[0])
 
         return df_cols, df_single, cat_cols
+
+    def drop_duplicates(self, df):
+        """Drop duplicates.
+
+        Args:
+            df (pd.DataFrame): A dataframe to be preprocessed
+        """
+        df = df.drop_duplicates()
+
+        return df
