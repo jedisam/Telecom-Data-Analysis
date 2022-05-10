@@ -30,28 +30,26 @@ class Outlier:
             # Computing 10th, 90th percentiles and replacing the outliers
             df[col] = [np.log(x) for x in df[col]]
 
-    def calculate_num_outliers_zscore(self, df, cols):
+        return df
+
+    def calculate_num_outliers_zscore(self, col):
         """Return the number of outliers for each numerical col.
 
         Args:
-            df (pd.DataFrame): a dataframe to be analyzed
+            col (pd.DataFrame): a dataframe to be analyzed
         """
         # calculate skewness
+        outliers = []
 
-        outliersTot = {}
-        for col in cols:
-            outliers = []
-            # def detect_outliers_zscore(data):
-            thres = 3
-            mean = np.mean(df[col])
-            std = np.std(df[col])
-            # print(mean, std)
-            for i in df[col]:
-                z_score = (i-mean)/std
-                if (np.abs(z_score) > thres):
-                    outliers.append(i)
-            outliers[col] = len(outliers)
-        return outliersTot  # Driver code
+        thres = 3
+        mean = np.mean(col)
+        std = np.std(col)
+        # print(mean, std)
+        for i in col:
+            z_score = (i-mean)/std
+            if (np.abs(z_score) > thres):
+                outliers.append(i)
+        return outliers  # Driver code
 
         # sample_outliers = detect_outliers_zscore(
         #     df['nb_of_sec_with_vol_ul_<_1250b'])
