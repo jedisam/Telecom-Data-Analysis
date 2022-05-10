@@ -5,7 +5,7 @@ import seaborn as sns
 
 
 class Plot:
-    def plot_hist(df: pd.DataFrame, column: str, color: str) -> None:
+    def plot_hist(self, df: pd.DataFrame, column: str, color: str) -> None:
         """Plot the hist of the column.
 
         Args:
@@ -20,7 +20,7 @@ class Plot:
         plt.title(f'Distribution of {column}', size=20, fontweight='bold')
         plt.show()
 
-    def plot_count(df: pd.DataFrame, column: str) -> None:
+    def plot_count(self, df: pd.DataFrame, column: str) -> None:
         """Plot the count of the column.
 
         Args:
@@ -32,7 +32,7 @@ class Plot:
         plt.title(f'Distribution of {column}', size=20, fontweight='bold')
         plt.show()
 
-    def plot_bar(df: pd.DataFrame, x_col: str, y_col: str, title: str, xlabel: str, ylabel: str) -> None:
+    def plot_bar(self, df: pd.DataFrame, x_col: str, y_col: str, title: str, xlabel: str, ylabel: str) -> None:
         """Plot bar of the column.
 
         Args:
@@ -48,7 +48,7 @@ class Plot:
         plt.ylabel(ylabel, fontsize=16)
         plt.show()
 
-    def plot_heatmap(df: pd.DataFrame, title: str, cbar=False) -> None:
+    def plot_heatmap(self, df: pd.DataFrame, title: str, cbar=False) -> None:
         """Plot Heat map of the dataset.
 
         Args:
@@ -61,7 +61,7 @@ class Plot:
         plt.title(title, size=18, fontweight='bold')
         plt.show()
 
-    def plot_box(df: pd.DataFrame, x_col: str, title: str) -> None:
+    def plot_box(self, df: pd.DataFrame, x_col: str, title: str) -> None:
         """Plot box chart of the column.
 
         Args:
@@ -75,7 +75,7 @@ class Plot:
         plt.xticks(rotation=75, fontsize=14)
         plt.show()
 
-    def plot_box_multi(df: pd.DataFrame, x_col: str, y_col: str, title: str) -> None:
+    def plot_box_multi(self, df: pd.DataFrame, x_col: str, y_col: str, title: str) -> None:
         """Plot the box chart for multiple column.
 
         Args:
@@ -89,7 +89,7 @@ class Plot:
         plt.yticks(fontsize=14)
         plt.show()
 
-    def plot_scatter(df: pd.DataFrame, x_col: str, y_col: str, title: str, hue: str, style: str) -> None:
+    def plot_scatter(self, df: pd.DataFrame, x_col: str, y_col: str, title: str, hue: str, style: str) -> None:
         """Plot Scatter chart of the data.
 
         Args:
