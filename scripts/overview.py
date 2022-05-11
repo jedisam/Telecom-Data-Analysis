@@ -35,7 +35,16 @@ class Overview:
         print("The telecom dataset contains", round(
             ((totalMissing/totalCells) * 100), 2), "%", "missing values.")
 
-        return df
+        # return df
+
+    def number_of_duplicates(self, df):
+        """Return the number of duplicates in the dataset.
+
+        Args:
+            df (pd.DataFrame): Dataset to be analyzed
+        """
+        duplicated_entries = df[df.duplicated()]
+        print(duplicated_entries.shape)
 
     def get_skewness(self, df):
         """Return the skewness of the dataset.
