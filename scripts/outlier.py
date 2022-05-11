@@ -55,7 +55,6 @@ class Outlier:
         #     df['nb_of_sec_with_vol_ul_<_1250b'])
         # print("Outliers from Z-scores method: ", len(sample_outliers))
 
-
     def calculate_num_outliers_iqr(self, df, cols):
         """Return the number of outliers for each col.
 
