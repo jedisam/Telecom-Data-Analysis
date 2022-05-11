@@ -1,6 +1,8 @@
-from typing import List
+import sys
+
 import numpy as np
 import pandas as pd
+from logger import Logger
 
 
 class Overview:
@@ -10,7 +12,15 @@ class Overview:
         Args:
             df (pd.DataFrame): dataframe to be preprocessed
         """
-        self.df = df
+        try:
+            self.df = df
+            self.logger = Logger("overview.log").get_app_logger()
+            self.logger.info(
+                'Successfully Instantiated Outlier Class Object')
+        except Exception:
+            self.logger.exception(
+                'Failed to Instantiate Preprocessing Class Object')
+            sys.exit(1)
 
     # how many missing values exist or better still what is the % of missing values in the dataset?
 
@@ -33,6 +43,8 @@ class Overview:
         totalMissing = missingCount.sum()
 
         # Calculate percentage of missing values
+        self.logger.info(
+            "Missing value of the dataset calculated")
         print("The telecom dataset contains", round(
             ((totalMissing/totalCells) * 100), 2), "%", "missing values.")
 
@@ -45,6 +57,8 @@ class Overview:
             df (pd.DataFrame): Dataset to be analyzed
         """
         duplicated_entries = df[df.duplicated()]
+        self.logger.info(
+            'Number of duplicated fields calculated')
         print(duplicated_entries.shape)
 
     def get_skewness(self, df):
@@ -55,7 +69,8 @@ class Overview:
         """
         # calculate skewness
         skewness = df.skew(axis=0, skipna=True)
-
+        self.logger.info(
+            'Skewness calculated')
         return skewness
 
     def get_decile(self, df: pd.DataFrame, column: str, decile: int, labels: list = []) -> pd.DataFrame:

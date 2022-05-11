@@ -1,7 +1,8 @@
+import sys
+
 import numpy as np
 import pandas as pd
-import numpy as np
-import pandas as pd
+from logger import Logger
 
 
 class Outlier:
@@ -11,7 +12,15 @@ class Outlier:
         Args:
             df (pd.DataFrame): dataframe to be preprocessed
         """
-        self.df = df
+        try:
+            self.df = df
+            self.logger = Logger("outlier.log").get_app_logger()
+            self.logger.info(
+                'Successfully Instantiated Outlier Class Object')
+        except Exception:
+            self.logger.exception(
+                'Failed to Instantiate Preprocessing Class Object')
+            sys.exit(1)
 
     # how many missing values exist or better still what is the % of missing values in the dataset?
 
@@ -29,7 +38,8 @@ class Outlier:
         for col in cols:
             # Computing 10th, 90th percentiles and replacing the outliers
             df[col] = [np.log(x) for x in df[col]]
-
+        self.logger.info(
+            'Handled outliers from the dataset successfully using np.log')
         return df
 
     def calculate_num_outliers_zscore(self, col):
