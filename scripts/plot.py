@@ -2,9 +2,22 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
+from logger import Logger
+import sys
 
 
 class Plot:
+    def __init__(self) -> None:
+        """Initilize class."""
+        try:
+            self.logger = Logger("plot.log").get_app_logger()
+            self.logger.info(
+                'Successfully Instantiated Preprocessing Class Object')
+        except Exception:
+            self.logger.exception(
+                'Failed to Instantiate Preprocessing Class Object')
+            sys.exit(1)
+
     def plot_hist(self, df: pd.DataFrame, column: str, color: str) -> None:
         """Plot the hist of the column.
 
@@ -18,6 +31,8 @@ class Plot:
         sns.displot(data=df, x=column, color=color,
                     kde=True, height=7, aspect=2)
         plt.title(f'Distribution of {column}', size=20, fontweight='bold')
+        self.logger.info(
+            'Plotting a histogram')
         plt.show()
 
     def plot_count(self, df: pd.DataFrame, column: str) -> None:
@@ -30,6 +45,8 @@ class Plot:
         plt.figure(figsize=(12, 7))
         sns.countplot(data=df, x=column)
         plt.title(f'Distribution of {column}', size=20, fontweight='bold')
+        self.logger.info(
+            'Plotting a plot_count')
         plt.show()
 
     def plot_bar(self, df: pd.DataFrame, x_col: str, y_col: str, title: str, xlabel: str, ylabel: str) -> None:
@@ -46,6 +63,8 @@ class Plot:
         plt.yticks(fontsize=14)
         plt.xlabel(xlabel, fontsize=16)
         plt.ylabel(ylabel, fontsize=16)
+        self.logger.info(
+            'Plotting a bar chart')
         plt.show()
 
     def plot_heatmap(self, df: pd.DataFrame, title: str, cbar=False) -> None:
@@ -60,6 +79,8 @@ class Plot:
         sns.heatmap(df, annot=True, cmap='viridis', vmin=0,
                     vmax=1, fmt='.2f', linewidths=.7, cbar=cbar)
         plt.title(title, size=18, fontweight='bold')
+        self.logger.info(
+            'Plotting a heatmap for the dataset: ')
         plt.show()
 
     def plot_box(self, df: pd.DataFrame, x_col: str, title: str) -> None:
@@ -74,6 +95,8 @@ class Plot:
         sns.boxplot(data=df, x=x_col)
         plt.title(title, size=20)
         plt.xticks(rotation=75, fontsize=14)
+        self.logger.info(
+            'Plotting a box plot for Column: ', x_col)
         plt.show()
 
     def plot_box_multi(self, df: pd.DataFrame, x_col: str, y_col: str, title: str) -> None:
@@ -88,6 +111,8 @@ class Plot:
         plt.title(title, size=20)
         plt.xticks(rotation=75, fontsize=14)
         plt.yticks(fontsize=14)
+        self.logger.info(
+            'Plotting a multiple box plot: ')
         plt.show()
 
     def plot_scatter(self, df: pd.DataFrame, x_col: str, y_col: str, title: str, hue: str, style: str) -> None:
@@ -102,4 +127,6 @@ class Plot:
         plt.title(title, size=20)
         plt.xticks(fontsize=14)
         plt.yticks(fontsize=14)
+        self.logger.info(
+            'Plotting a scatter plot')
         plt.show()
