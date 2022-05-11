@@ -1,0 +1,27 @@
+05-12-2022 01:01:12 : INFO : logger : Successfully Instantiated Outlier Class Object
+05-12-2022 01:01:12 : INFO : logger : Successfully Instantiated Outlier Class Object
+05-12-2022 01:04:23 : INFO : logger : Missing value of the dataset calculated
+05-12-2022 01:06:37 : INFO : logger : Successfully Instantiated Preprocessing Class Object
+05-12-2022 01:06:37 : INFO : logger : Successfully Instantiated Outlier Class Object
+05-12-2022 01:06:37 : INFO : logger : Successfully Instantiated Outlier Class Object
+05-12-2022 01:06:37 : INFO : logger : Successfully Instantiated Outlier Class Object
+05-12-2022 01:06:37 : INFO : logger : Successfully Instantiated Outlier Class Object
+05-12-2022 01:06:45 : INFO : logger : Missing value of the dataset calculated
+05-12-2022 01:06:45 : INFO : logger : Missing value of the dataset calculated
+05-12-2022 01:06:50 : INFO : logger : Number of duplicated fields calculated
+05-12-2022 01:06:50 : INFO : logger : Number of duplicated fields calculated
+05-12-2022 01:07:26 : INFO : logger : Successfully Instantiated Outlier Class Object
+05-12-2022 01:07:28 : INFO : logger : Missing value of the dataset calculated
+05-12-2022 01:07:29 : INFO : logger : Skewness calculated
+05-12-2022 01:07:37 : INFO : logger : Successfully Instantiated Outlier Class Object
+05-12-2022 01:07:38 : INFO : logger : Cleaned feature names
+05-12-2022 01:07:53 : INFO : logger : Filled missing numerical variables
+05-12-2022 01:07:56 : INFO : logger : Filled missing categorical variables with mode
+05-12-2022 01:09:29 : INFO : logger : Plotting a bar chart
+05-12-2022 01:09:29 : INFO : logger : Plotting a bar chart
+05-12-2022 01:09:42 : INFO : logger : Plotting a bar chart
+05-12-2022 01:09:42 : INFO : logger : Plotting a bar chart
+05-12-2022 01:09:49 : INFO : logger : Plotting a bar chart
+05-12-2022 01:09:49 : INFO : logger : Plotting a bar chart
+05-12-2022 01:09:53 : INFO : logger : Plotting a bar chart
+05-12-2022 01:09:53 : INFO : logger : Plotting a bar chart
