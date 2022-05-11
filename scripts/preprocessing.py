@@ -111,3 +111,14 @@ class PreProcess:
         df = df.drop_duplicates()
 
         return df
+
+    def convert_bytes_to_megabytes(self, df, col):
+        """Convert byte data to megabyte.
+
+        Args:
+            df (pd.DataFrame): A dataframe to be preprocessed
+        """
+        megabyte = 1*10e+5
+        megabyte_col = df[col] / megabyte
+
+        return megabyte_col

@@ -1,3 +1,4 @@
+from typing import List
 import numpy as np
 import pandas as pd
 
@@ -56,3 +57,18 @@ class Overview:
         skewness = df.skew(axis=0, skipna=True)
 
         return skewness
+
+    def get_decile(self, df: pd.DataFrame, column: str, decile: int, labels: list = []) -> pd.DataFrame:
+        """Get the decile based on the column.
+
+        Args:
+            df (pd.DataFrame): Dataset to be used for Decile
+            column (str): column to calculate the decile
+            decile (int): number of decile
+            labels (list, optional): Decile labels. Defaults to [].
+
+        Returns:
+            pd.DataFrame: Calculated decile
+        """
+        df['deciles'] = pd.qcut(df[column], decile, labels=labels)
+        return df

@@ -55,9 +55,9 @@ class Plot:
             df (pd.DataFrame): Dataframe to be plotted.
             title (str): title of chart.
         """
-        num_cols = df.select_dtypes(include=np.number).columns
+        # num_cols = df.select_dtypes(include=np.number).columns
         plt.figure(figsize=(12, 7))
-        sns.heatmap(df[num_cols], annot=True, cmap='viridis', vmin=0,
+        sns.heatmap(df, annot=True, cmap='viridis', vmin=0,
                     vmax=1, fmt='.2f', linewidths=.7, cbar=cbar)
         plt.title(title, size=18, fontweight='bold')
         plt.show()
