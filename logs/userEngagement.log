@@ -1,0 +1,42 @@
+05-14-2022 06:31:29 : INFO : logger : Initialized userEngagement.py logger
+05-14-2022 06:31:29 : INFO : logger : Initialized userEngagement.py logger
+05-14-2022 06:36:25 : INFO : logger : Plotting a scatter plot
+05-14-2022 06:36:25 : INFO : logger : Plotting a scatter plot
+05-14-2022 06:36:26 : INFO : logger : Plotting a scatter plot
+05-14-2022 06:36:26 : INFO : logger : Plotting a scatter plot
+05-14-2022 06:36:26 : INFO : logger : Plotting a scatter plot
+05-14-2022 06:36:26 : INFO : logger : Plotting a scatter plot
+05-14-2022 06:36:53 : INFO : logger : Plotting a scatter plot
+05-14-2022 06:36:53 : INFO : logger : Plotting a scatter plot
+05-14-2022 06:36:54 : INFO : logger : Plotting a scatter plot
+05-14-2022 06:36:54 : INFO : logger : Plotting a scatter plot
+05-14-2022 06:36:54 : INFO : logger : Plotting a scatter plot
+05-14-2022 06:36:54 : INFO : logger : Plotting a scatter plot
+05-14-2022 06:37:26 : INFO : logger : Plotting a scatter plot
+05-14-2022 06:37:26 : INFO : logger : Plotting a scatter plot
+05-14-2022 06:37:26 : INFO : logger : Plotting a scatter plot
+05-14-2022 06:37:26 : INFO : logger : Plotting a scatter plot
+05-14-2022 06:37:27 : INFO : logger : Plotting a scatter plot
+05-14-2022 06:37:27 : INFO : logger : Plotting a scatter plot
+05-14-2022 06:37:27 : INFO : logger : Plotting a scatter plot
+05-14-2022 06:37:27 : INFO : logger : Plotting a scatter plot
+05-14-2022 06:39:51 : INFO : logger : # Centroids of the clustering:
+[[0.52183007 0.12384303 0.84185823]
+ [0.49708491 0.23942868 0.83307262]
+ [0.55869508 0.28813456 0.7749892 ]]
+05-14-2022 06:39:51 : INFO : logger : # Centroids of the clustering:
+[[0.52183007 0.12384303 0.84185823]
+ [0.49708491 0.23942868 0.83307262]
+ [0.55869508 0.28813456 0.7749892 ]]
+05-14-2022 06:40:03 : INFO : logger : # Centroids of the clustering:
+[[0.52183007 0.12384303 0.84185823]
+ [0.49708491 0.23942868 0.83307262]
+ [0.55869508 0.28813456 0.7749892 ]]
+05-14-2022 06:40:03 : INFO : logger : # Centroids of the clustering:
+[[0.52183007 0.12384303 0.84185823]
+ [0.49708491 0.23942868 0.83307262]
+ [0.55869508 0.28813456 0.7749892 ]]
+05-14-2022 06:40:03 : INFO : logger : # The number of iterations required to converge: 279.73641503330884
+05-14-2022 06:40:03 : INFO : logger : # The number of iterations required to converge: 279.73641503330884
+05-14-2022 06:40:03 : INFO : logger : # The number of iterations required to converge: 7
+05-14-2022 06:40:03 : INFO : logger : # The number of iterations required to converge: 7
