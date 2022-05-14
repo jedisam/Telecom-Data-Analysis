@@ -112,3 +112,24 @@
 05-14-2022 07:46:22 : INFO : logger : Plotting a bar chart
 05-14-2022 07:46:56 : INFO : logger : Plotting a bar chart
 05-14-2022 07:58:44 : INFO : logger : The optimal number of cluster is: 3
+05-14-2022 10:44:10 : INFO : logger : Successfully Instantiated Outlier Class Object
+05-14-2022 10:44:22 : INFO : logger : Successfully Instantiated Preprocessing Class Object
+05-14-2022 10:44:22 : INFO : logger : Successfully Instantiated Outlier Class Object
+05-14-2022 10:44:22 : INFO : logger : Successfully Instantiated Outlier Class Object
+05-14-2022 10:45:10 : INFO : logger : Plotting a bar chart
+05-14-2022 10:45:10 : INFO : logger : Plotting a bar chart
+05-14-2022 10:52:52 : INFO : logger : Plotting a bar chart
+05-14-2022 10:52:52 : INFO : logger : Plotting a bar chart
+05-14-2022 10:53:06 : INFO : logger : Plotting a bar chart
+05-14-2022 10:53:06 : INFO : logger : Plotting a bar chart
+05-14-2022 10:53:10 : INFO : logger : Plotting a bar chart
+05-14-2022 10:53:10 : INFO : logger : Plotting a bar chart
+05-14-2022 11:13:29 : INFO : logger : Successfully Instantiated Outlier Class Object
+05-14-2022 11:13:43 : INFO : logger : Plotting a bar chart
+05-14-2022 11:13:46 : INFO : logger : Plotting a bar chart
+05-14-2022 11:25:55 : INFO : logger : # Centroids of the clustering:
+[[0.36928239 0.9241212  0.07157074]
+ [0.75951495 0.63003593 0.11923423]
+ [0.55334119 0.82400297 0.1053961 ]]
+05-14-2022 11:25:55 : INFO : logger : # The number of iterations required to converge: 516.198848041318
+05-14-2022 11:25:55 : INFO : logger : # The number of iterations required to converge: 6
