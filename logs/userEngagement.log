@@ -40,3 +40,16 @@
 05-14-2022 06:40:03 : INFO : logger : # The number of iterations required to converge: 279.73641503330884
 05-14-2022 06:40:03 : INFO : logger : # The number of iterations required to converge: 7
 05-14-2022 06:40:03 : INFO : logger : # The number of iterations required to converge: 7
+05-14-2022 07:04:26 : INFO : logger : Plotting a pie chart
+05-14-2022 07:04:26 : INFO : logger : Plotting a pie chart
+05-14-2022 07:45:11 : INFO : logger : Plotting a histogram
+05-14-2022 07:45:11 : INFO : logger : Plotting a histogram
+05-14-2022 07:45:24 : INFO : logger : Plotting a histogram
+05-14-2022 07:45:24 : INFO : logger : Plotting a histogram
+05-14-2022 07:46:22 : INFO : logger : Plotting a bar chart
+05-14-2022 07:46:22 : INFO : logger : Plotting a bar chart
+05-14-2022 07:46:56 : INFO : logger : Plotting a bar chart
+05-14-2022 07:46:56 : INFO : logger : Plotting a bar chart
+05-14-2022 07:58:44 : INFO : logger : The optimal number of cluster is: 3
+05-14-2022 07:58:44 : INFO : logger : The optimal number of cluster is: 3
+05-14-2022 08:26:44 : INFO : logger : Initialized user_experience logger

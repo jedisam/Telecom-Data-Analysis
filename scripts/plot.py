@@ -130,3 +130,19 @@ class Plot:
         self.logger.info(
             'Plotting a scatter plot')
         plt.show()
+
+    def plot_pie(self, data, labels, title) -> None:
+        """Plot pie chart of the data.
+
+        Args:
+            data (list): Data to be plotted.
+            labels (list): labels of the data.
+            colors (list): colors of the data.
+        """
+        plt.figure(figsize=(12, 7))
+        colors = sns.color_palette('bright')
+        plt.pie(data, labels=labels, colors=colors, autopct='%.0f%%')
+        plt.title(title, size=20)
+        self.logger.info(
+            'Plotting a pie chart')
+        plt.show()
