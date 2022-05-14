@@ -15,7 +15,6 @@
 
 
 ## About
-<hr>
 The lifeblood of any business is its customers. Businesses are always finding ways to better understand their customers so that they can provide more efficient and tailored solutions to them. As telecom brands are the data providers of all online activities, meeting user requirements, and creating an engaging user experience is a prerequisite for them. Building & improving the QoS (Quality of Service) to leverage the mobile platforms and to get more users for the business is good but the success of the business would be determined by the user engagement and activity of the customers on available apps. 
 
 This project is a data analysis project for the telecom industry. The data is collected from the telecom industry and is used to create a dashboard that will help the telecom industry to understand the customers better. 
@@ -23,11 +22,9 @@ This project is a data analysis project for the telecom industry. The data is co
 
 
 ## Objective
-<hr>
 Given the data collected from the telecom industry, the project will create a dashboard that will help the telecom industry to understand the customers better, to create a better user experience and to make decision for the investors.
 
 ## Data
-<hr>
 The data was found from the telecom industry. 
 
 [dataset](https://docs.google.com/spreadsheets/d/1UXgtCVtB75-tkEfwGEV4pEw_uBcvXX3J/edit?usp=sharing&ouid=103241713684165615552&rtpof=true&sd=true)
@@ -35,7 +32,6 @@ The data was found from the telecom industry.
 
 
 ## Usage
-<hr>
 ### Option 1: Docker: Recommended
 The docker image is built on docker-hub on every push to the main branch using Github actions. It can be used to run the project locally.
 Pull docker image
@@ -104,7 +100,6 @@ you should be able to see the dashboard.
         └── Dockerfile
 
 ## Dashboard
-<hr>
 
 [Deployed link](https://telecom-analytics.herokuapp.com/)
 
