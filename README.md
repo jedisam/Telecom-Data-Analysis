@@ -75,7 +75,7 @@ you should be able to see the dashboard.
 
 
 ### Repository overview
-<hr>
+
     Structure
         ├── models  (contains trained model)
         ├── data    (contains data collected from the telecom industry)
