@@ -138,3 +138,39 @@
 05-14-2022 13:04:29 : INFO : logger : Plotting a pie chart
 05-14-2022 13:05:00 : INFO : logger : Plotting a pie chart
 05-14-2022 13:05:00 : INFO : logger : Plotting a pie chart
+05-14-2022 19:11:16 : INFO : logger : Initialized userEngagement.py logger
+05-14-2022 19:11:19 : INFO : logger : Successfully Instantiated Preprocessing Class Object
+05-14-2022 19:11:19 : INFO : logger : Successfully Instantiated Outlier Class Object
+05-14-2022 19:16:54 : INFO : logger : Initialized userEngagement.py logger
+05-14-2022 19:16:54 : INFO : logger : Initialized userEngagement.py logger
+05-14-2022 19:16:56 : INFO : logger : Successfully Instantiated Preprocessing Class Object
+05-14-2022 19:16:56 : INFO : logger : Successfully Instantiated Preprocessing Class Object
+05-14-2022 19:16:56 : INFO : logger : Successfully Instantiated Outlier Class Object
+05-14-2022 19:16:56 : INFO : logger : Successfully Instantiated Outlier Class Object
+05-14-2022 19:18:02 : INFO : logger : # Centroids of the clustering:
+[[0.52183007 0.12384303 0.84185823]
+ [0.49708491 0.23942868 0.83307262]
+ [0.55869508 0.28813456 0.7749892 ]]
+05-14-2022 19:18:02 : INFO : logger : # Centroids of the clustering:
+[[0.52183007 0.12384303 0.84185823]
+ [0.49708491 0.23942868 0.83307262]
+ [0.55869508 0.28813456 0.7749892 ]]
+05-14-2022 19:18:02 : INFO : logger : # The number of iterations required to converge: 279.73641503330884
+05-14-2022 19:18:02 : INFO : logger : # The number of iterations required to converge: 279.73641503330884
+05-14-2022 19:18:02 : INFO : logger : # The number of iterations required to converge: 7
+05-14-2022 19:18:02 : INFO : logger : # The number of iterations required to converge: 7
+05-14-2022 19:19:13 : INFO : logger : Plotting a pie chart
+05-14-2022 19:19:13 : INFO : logger : Plotting a pie chart
+05-14-2022 19:25:36 : INFO : logger : Initialized user_experience logger
+05-14-2022 19:25:39 : INFO : logger : Successfully Instantiated Preprocessing Class Object
+05-14-2022 19:25:39 : INFO : logger : Successfully Instantiated Outlier Class Object
+05-14-2022 19:26:00 : INFO : logger : Plotting a bar chart
+05-14-2022 19:26:01 : INFO : logger : Plotting a bar chart
+05-14-2022 19:27:54 : INFO : logger : # Centroids of the clustering:
+[[0.36928239 0.9241212  0.07157074]
+ [0.75951495 0.63003593 0.11923423]
+ [0.55334119 0.82400297 0.1053961 ]]
+05-14-2022 19:27:54 : INFO : logger : # The number of iterations required to converge: 516.1988480413179
+05-14-2022 19:27:54 : INFO : logger : # The number of iterations required to converge: 6
+05-14-2022 19:31:26 : INFO : logger : Plotting a pie chart
+05-14-2022 19:31:33 : INFO : logger : Plotting a pie chart
