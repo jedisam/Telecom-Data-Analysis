@@ -5,4 +5,4 @@ plotly==5.7.0
 pytest==7.1.2
 seaborn
 streamlit==0.79.0
-
+kneed
