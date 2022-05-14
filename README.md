@@ -1,5 +1,19 @@
 # Telecom-Data-Analysis
 
+<!-- Table of contents -->
+- [Telecom-Data-Analysis](#telecom-data-analysis)
+  - [About](#about)
+  - [Objective](#objective)
+  - [Data](#data)
+  - [Usage](#usage)
+    - [Option 1: Docker: Recommended](#option-1-docker-recommended)
+    - [Option 2:(no docker)](#option-2no-docker)
+    - [Repository overview](#repository-overview)
+  - [Dashboard](#dashboard)
+  - [Contributing](#contributing)
+  - [License](#license)
+
+
 ## About
 <hr>
 The lifeblood of any business is its customers. Businesses are always finding ways to better understand their customers so that they can provide more efficient and tailored solutions to them. As telecom brands are the data providers of all online activities, meeting user requirements, and creating an engaging user experience is a prerequisite for them. Building & improving the QoS (Quality of Service) to leverage the mobile platforms and to get more users for the business is good but the success of the business would be determined by the user engagement and activity of the customers on available apps. 
