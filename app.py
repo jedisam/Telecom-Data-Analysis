@@ -1,12 +1,15 @@
 import streamlit as st
-
-
+from PIL import Image
 from streamlit_option_menu import option_menu
 
+from pages.home import home_app
+from pages.overview import overview_app
+
+st.set_page_config(page_title="Telcom Data Analysis")
 
 slected = option_menu(
     menu_title=None,
-    options=["Home", "About", "Contact"],
+    options=["Home", "Overview", "Predict"],
     icons=["house", "book", "envelope"],
     menu_icon="cast",
     orientation="horizontal"
@@ -17,14 +20,13 @@ styles = {
     "nav-link": {"font-size": "25px", "text-align": "left", "margin": "0px", "--hover-color": "#eee"},
     "nav-link-selected": {"background-color": "green"},
 }
+st.title("Telecom Data Analysis")
 
 
 if slected == "Home":
-    st.title("Home")
-    st.write("This is the home page")
-elif slected == "About":
-    st.title("About")
-    st.write("This is the about page")
+    home_app()
+elif slected == "Overview":
+    overview_app()
 else:
-    st.title("Contact")
-    st.write("This is the contact page")
+    st.title("Predict")
+    st.write("Prdict user satisfaction based on user engagement and experience")
