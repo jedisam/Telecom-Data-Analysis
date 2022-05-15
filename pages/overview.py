@@ -1,4 +1,3 @@
-from plot import Plot
 from PIL import Image
 import streamlit as st
 import plotly.express as px
@@ -45,5 +44,5 @@ def overview_app():
     st.write(top_5_session)
 
     st.header("Duration Distribution")
-    fig = px.histogram(df, x='dur._(ms)', height=500)
-    # pl.plot_hist(df, df['dur._(ms)'], 'orange')
+    image = Image.open('./assets/Durationdist.png')
+    st.image(image, caption="Duration Distribution", use_column_width=True)
