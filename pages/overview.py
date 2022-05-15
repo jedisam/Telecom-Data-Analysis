@@ -11,7 +11,6 @@ sys.path.append(os.path.abspath(os.path.join('./scripts')))
 
 
 def overview_app():
-    pl = Plot()
     st.title("Overview")
     st.write(
         "Customer Data's Overview")
