@@ -6,8 +6,8 @@
   - [Objective](#objective)
   - [Data](#data)
   - [Usage](#usage)
-    - [Option 1: Docker: Recommended](#option-1-docker-recommended)
-    - [Option 2: Manual build](#option-2-manual-build)
+    - [Option 1: Docker Image](#option-1-docker-image)
+    - [Option 2: Docker-compose](#option-2-docker-compose)
     - [Repository overview](#repository-overview)
   - [Dashboard](#dashboard)
   - [Contributing](#contributing)
@@ -32,7 +32,7 @@ The data was found from the telecom industry.
 
 
 ## Usage
-### Option 1: Docker: Recommended
+### Option 1: Docker Image
 The docker image is built on docker-hub on every push to the main branch using Github actions. It can be used to run the project locally.
 Pull docker image
 ```
@@ -43,18 +43,24 @@ Run docker image
 docker run --rm -it  -p 8501:8501/tcp jedisam/telecom-analyis
 ```
 
-### Option 2: Manual build
+### Option 2: Docker-compose
 The project is runned on the local machine using the python script.
 <br>
 
 **1. Clone the repo**
 ```
-https://github.com/jedisam/Telecom-Data-Analysis.git
+git clone https://github.com/jedisam/Telecom-Data-Analysis.git
 ```
 **2. cd into repo**
 ```
 cd Telecom-Data-Analysis
 ```
+**3.Start docker container:**
+```
+docker-compose up -d
+```
+OR
+
 **3.Activate environement or create one:**
 ```
 conda create -n <env-name> && conda activate <env-name>
