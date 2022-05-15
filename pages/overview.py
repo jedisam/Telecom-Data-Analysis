@@ -1,11 +1,12 @@
-from PIL import Image
-import streamlit as st
-import plotly.express as px
-import streamlit.components.v1 as components
-import pandas as pd
 import os
 # from matplotlib.pyplot import plt
 import sys
+
+import pandas as pd
+import plotly.express as px
+import streamlit as st
+import streamlit.components.v1 as components
+from PIL import Image
 
 sys.path.append(os.path.abspath(os.path.join('./scripts')))
 

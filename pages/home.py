@@ -1,7 +1,6 @@
-from PIL import Image
 import streamlit as st
 import streamlit.components.v1 as components
-# sys.path.append(os.path.abspath(os.path.join('../')))
+from PIL import Image
 
 
 def home_app():

@@ -7,7 +7,7 @@
   - [Data](#data)
   - [Usage](#usage)
     - [Option 1: Docker: Recommended](#option-1-docker-recommended)
-    - [Option 2:(no docker)](#option-2no-docker)
+    - [Option 2: Manual build](#option-2-manual-build)
     - [Repository overview](#repository-overview)
   - [Dashboard](#dashboard)
   - [Contributing](#contributing)
@@ -43,7 +43,7 @@ Run docker image
 docker run --rm -it  -p 8501:8501/tcp jedisam/telecom-analyis
 ```
 
-### Option 2:(no docker)
+### Option 2: Manual build
 The project is runned on the local machine using the python script.
 <br>
 
