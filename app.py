@@ -4,6 +4,7 @@ from streamlit_option_menu import option_menu
 
 from pages.home import home_app
 from pages.overview import overview_app
+from pages.predict import prdict_app
 
 st.set_page_config(page_title="Telcom Data Analysis")
 
@@ -28,5 +29,4 @@ if slected == "Home":
 elif slected == "Overview":
     overview_app()
 else:
-    st.title("Predict")
-    st.write("Prdict user satisfaction based on user engagement and experience")
+    prdict_app()
