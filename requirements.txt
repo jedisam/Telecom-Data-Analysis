@@ -6,4 +6,5 @@ pytest==7.1.2
 seaborn
 streamlit==1.8.1 
 streamlit_option_menu
+sklearn
 kneed

@@ -1,12 +1,8 @@
-from PIL import Image
-import streamlit as st
-import plotly.express as px
 import pickle
-import streamlit.components.v1 as components
+
 import pandas as pd
-import os
-# from matplotlib.pyplot import plt
-import sys
+import streamlit as st
+from PIL import Image
 
 
 def load_model():
