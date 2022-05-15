@@ -55,6 +55,11 @@ def overview_app():
     st.image(image, caption="Applications Duration Distribution",
              use_column_width=True)
 
+    st.header("Clustering users based on their Engagement score")
+    image = Image.open('./assets/userEngagCluster.png')
+    st.image(image, caption="Users clustering into 3 groups based on Engagement score",
+             use_column_width=True)
+
     st.header("TCP retransmissions")
     image = Image.open('./assets/tcpretransmission.png')
     st.image(image, caption="Top TCP retransmissions",
@@ -63,4 +68,9 @@ def overview_app():
     st.header("Top throughputs")
     image = Image.open('./assets/TopTP.png')
     st.image(image, caption="Top 10 througputs",
+             use_column_width=True)
+
+    st.header("Experience Distribution")
+    image = Image.open('./assets/ClusterDist.png')
+    st.image(image, caption="Experience distribution of user",
              use_column_width=True)
